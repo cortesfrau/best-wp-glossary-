@@ -1,0 +1,23 @@
+{
+  "name": "wp-best-glossary",
+  "version": "1.0.0",
+  "description": "Glossary plugin for WordPress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cortesfrau/wp-best-glossary.git"
+  },
+  "keywords": [
+    "glossary",
+    "WordPress"
+  ],
+  "author": "Lluís Cortès",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cortesfrau/wp-glossary/issues"
+  },
+  "homepage": "https://github.com/cortesfrau/wp-glossary#readme"
+}
