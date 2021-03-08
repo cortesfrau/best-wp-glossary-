@@ -3,8 +3,33 @@
   "version": "1.0.0",
   "description": "Glossary plugin for WordPress",
   "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.13.1",
+    "@babel/preset-env": "^7.13.5",
+    "@babel/register": "^7.13.0",
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "autoprefixer": "^10.2.4",
+    "babel-loader": "^8.2.2",
+    "bootstrap": "^5.0.0-beta2",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-wp-pot": "^2.5.0",
+    "gulp-zip": "^5.0.2",
+    "merge-stream": "^2.0.0",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^6.1.2",
+    "yargs": "^7.1.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "build": "gulp build --prod"
   },
   "repository": {
     "type": "git",

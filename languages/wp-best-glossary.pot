@@ -1,0 +1,50 @@
+# Copyright (C) 2021 wp-best-glossary
+# This file is distributed under the same license as the wp-best-glossary package.
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-best-glossary\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: inc/setup.php:23
+msgid "WP Best Glossary Settings"
+msgstr ""
+
+#: inc/setup.php:24
+msgid "Settings"
+msgstr ""
+
+#: inc/setup.php:56
+msgid "Shortcodes"
+msgstr ""
+
+#: inc/setup.php:57
+msgid "Use these shortcodes to show the glossary content in any page or post."
+msgstr ""
+
+#: inc/setup.php:61
+msgid "Glossary archive"
+msgstr ""
+
+#: inc/setup.php:66
+msgid "Styles"
+msgstr ""
+
+#: inc/setup.php:74
+msgid "Colors"
+msgstr ""
+
+#: inc/setup.php:75
+msgid "Enter colors sin hex format (Example: #1E90FF)"
+msgstr ""
+
+#: inc/setup.php:78
+msgid "Accent color"
+msgstr ""

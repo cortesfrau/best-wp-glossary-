@@ -1,0 +1,70 @@
+//-----------------//
+//--- Variables ---//
+//-----------------//
+$accent-color: #1E90FF;
+$white: #fff;
+$font-weight-bold: 700;
+
+
+//------------------//
+//--- Navigation ---//
+//------------------//
+#wpbg-archive-nav {
+  margin-bottom: 3rem;
+
+  li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 5px 5px 0;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    font-size: 1rem;
+    font-weight: $font-weight-bold;
+  }
+}
+
+
+//--------------//
+//--- Titles ---//
+//--------------//
+.wpbg-initial-title {
+  font-size: 1.5rem;
+  font-weight: $font-weight-bold;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  border: 1px solid;
+  padding: 1rem 1.5rem;
+}
+.wpbg-word-title {
+  font-weight: $font-weight-bold;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+
+//----------------------------//
+//--- Word Archive Content ---//
+//----------------------------//
+.wpbg-content {
+  margin-top: 0;
+  margin-bottom: 2rem;
+
+  * {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
