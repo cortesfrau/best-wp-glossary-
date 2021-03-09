@@ -5,7 +5,7 @@ if (!defined('WP_UNINSTALL_PLUGIN')) exit;
 
 // Delete options
 foreach ( wp_load_alloptions() as $option => $value ) {
-  if ( strpos( $option, 'wpbg_' ) === 0 ) {
+  if ( strpos( $option, 'bwpg_' ) === 0 ) {
     delete_option( $option );
   }
 }

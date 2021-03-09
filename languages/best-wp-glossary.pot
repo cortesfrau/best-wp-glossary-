@@ -1,8 +1,8 @@
-# Copyright (C) 2021 wp-best-glossary
-# This file is distributed under the same license as the wp-best-glossary package.
+# Copyright (C) 2021 best-wp-glossary
+# This file is distributed under the same license as the best-wp-glossary package.
 msgid ""
 msgstr ""
-"Project-Id-Version: wp-best-glossary\n"
+"Project-Id-Version: best-wp-glossary\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,38 +13,50 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: inc/setup.php:23
+#: inc/custom-types.php:13, inc/custom-types.php:18
+msgid "Glossary Word"
+msgstr ""
+
+#: inc/custom-types.php:14
+msgid "Glossary Words"
+msgstr ""
+
+#: inc/custom-types.php:53, inc/custom-types.php:58
+msgid "Glossary Initials"
+msgstr ""
+
+#: inc/custom-types.php:54
+msgid "Glossary Initial"
+msgstr ""
+
+#: inc/settings.php:23
 msgid "WP Best Glossary Settings"
 msgstr ""
 
-#: inc/setup.php:24
+#: inc/settings.php:24
 msgid "Settings"
 msgstr ""
 
-#: inc/setup.php:56
+#: inc/settings.php:54
 msgid "Shortcodes"
 msgstr ""
 
-#: inc/setup.php:57
+#: inc/settings.php:55
 msgid "Use these shortcodes to show the glossary content in any page or post."
 msgstr ""
 
-#: inc/setup.php:61
+#: inc/settings.php:59
 msgid "Glossary archive"
 msgstr ""
 
-#: inc/setup.php:66
-msgid "Styles"
-msgstr ""
-
-#: inc/setup.php:74
+#: inc/settings.php:70
 msgid "Colors"
 msgstr ""
 
-#: inc/setup.php:75
-msgid "Enter colors sin hex format (Example: #1E90FF)"
+#: inc/settings.php:71
+msgid "Enter colors in HEX format. Example: #1E90FF"
 msgstr ""
 
-#: inc/setup.php:78
+#: inc/settings.php:74
 msgid "Accent color"
 msgstr ""

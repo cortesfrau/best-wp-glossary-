@@ -1,8 +1,8 @@
 {
-  "name": "wp-best-glossary",
+  "name": "best-wp-glossary",
   "version": "1.0.0",
   "description": "Glossary plugin for WordPress",
-  "main": "index.js",
+  "main": "",
   "devDependencies": {
     "@babel/core": "^7.13.1",
     "@babel/preset-env": "^7.13.5",
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cortesfrau/wp-best-glossary.git"
+    "url": "git+https://github.com/cortesfrau/best-wp-glossary.git"
   },
   "keywords": [
     "glossary",

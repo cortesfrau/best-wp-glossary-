@@ -9,8 +9,8 @@ $font-weight-bold: 700;
 //------------------//
 //--- Navigation ---//
 //------------------//
-#wpbg-archive-nav {
-  margin-bottom: 3rem;
+#bwpg-archive-nav {
+  margin-bottom: 4rem;
 
   li {
     display: inline-block;
@@ -23,8 +23,7 @@ $font-weight-bold: 700;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    width: 40px;
-    height: 40px;
+    padding: .5rem 1rem;
     border: 1px solid;
     font-size: 1rem;
     font-weight: $font-weight-bold;
@@ -35,15 +34,15 @@ $font-weight-bold: 700;
 //--------------//
 //--- Titles ---//
 //--------------//
-.wpbg-initial-title {
-  font-size: 1.5rem;
+.bwpg-initial-title {
+  font-size: 1.75rem;
   font-weight: $font-weight-bold;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  border: 1px solid;
+  border-bottom: 1px solid;
   padding: 1rem 1.5rem;
 }
-.wpbg-word-title {
+.bwpg-word-title {
   font-weight: $font-weight-bold;
   font-size: 1rem;
   margin-top: 0;
@@ -54,7 +53,7 @@ $font-weight-bold: 700;
 //----------------------------//
 //--- Word Archive Content ---//
 //----------------------------//
-.wpbg-content {
+.bwpg-content {
   margin-top: 0;
   margin-bottom: 2rem;
 
@@ -64,7 +63,8 @@ $font-weight-bold: 700;
   }
 
   p {
-    margin-top: 0;
+    font-size: 1rem;
     margin-bottom: 1rem;
+    margin-top: 0;
   }
 }

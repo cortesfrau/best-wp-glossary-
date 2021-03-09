@@ -9,7 +9,6 @@ import webpack from 'webpack-stream';
 import named from 'vinyl-named';
 import yargs from 'yargs';
 import gulpif from 'gulp-if';
-import merge from 'merge-stream';
 import wpPot from "gulp-wp-pot";
 import zip from "gulp-zip";
 import postcss from 'gulp-postcss';
@@ -25,7 +24,7 @@ const PRODUCTION = yargs.argv.prod;
 
 // Styles Task
 export const styles = () => {
-  return src(['src/scss/wpbg-bundle.scss'])
+  return src(['src/scss/bwpg-bundle.scss'])
     .pipe(gulpif(!PRODUCTION, sourcemaps.init()))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulpif(PRODUCTION, postcss([ autoprefixer ])))
@@ -36,7 +35,7 @@ export const styles = () => {
 
 // Scripts Task
 export const scripts = () => {
-  return src(['src/js/wpbg-bundle.js'])
+  return src(['src/js/bwpg-bundle.js','src/js/bwpg-admin.js'])
     .pipe(named())
     .pipe(webpack({
       module: {
@@ -71,20 +70,6 @@ export const img = () => {
     .pipe(dest('dist/images'));
 }
 
-// Copy Assets Tasks
-export const copyAssets = () => {
-  var bootstrapScss = src('node_modules/bootstrap/scss/**/*.scss')
-    .pipe(dest('assets/bootstrap/scss'));
-  var bootstrapJs = src('node_modules/bootstrap/dist/js/*.js')
-    .pipe(dest('assets/bootstrap/js'));
-  var fontawesomeJs = src('node_modules/@fortawesome/fontawesome-free/js/*')
-    .pipe(dest('assets/fontawesome/js'))
-  return merge(bootstrapScss, bootstrapJs, fontawesomeJs);
-}
-
-// Clean Assets Task
-export const cleanAssets = () => del(['assets']);
-
 // Copy Task
 export const copy = () => {
   return src(['src/**/*','!src/{images,js,scss}','!src/{images,js,scss}/**/*'])
@@ -99,7 +84,7 @@ export const pot = () => {
   return src("**/*.php")
     .pipe(
       wpPot({
-        domain: "wpbg",
+        domain: "best_wp_glossary",
         package: info.name
       })
     )
@@ -132,7 +117,6 @@ export const watchForChanges = () => {
 }
 
 // Dev & Build Tasks
-export const themeSetup = series(cleanAssets, copyAssets);
 export const dev = series(clean, parallel(styles, img, copy, scripts), watchForChanges);
 export const build = series(clean, parallel(styles, img, copy, scripts), pot, compress);
 export default dev;

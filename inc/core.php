@@ -6,8 +6,8 @@ if (!defined( 'ABSPATH')) exit;
 //--------------------------//
 //--- Save Glossary Term ---//
 //--------------------------//
-add_action('save_post_wpbg_word', 'wpbg_save_glossary_word');
-function wpbg_save_glossary_word($post_id) {
+add_action('save_post_bwpg_word', 'bwpg_save_glossary_word');
+function bwpg_save_glossary_word($post_id) {
 
   if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
     return;
@@ -23,7 +23,7 @@ function wpbg_save_glossary_word($post_id) {
     return;
   }
 
-  $taxonomy = 'wpbg_initial';
+  $taxonomy = 'bwpg_initial';
 
   $initial = substr(strtoupper($post->post_title), 0, 1);
 
