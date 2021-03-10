@@ -4,6 +4,38 @@
 $accent-color: #1E90FF;
 $white: #fff;
 $font-weight-bold: 700;
+$transition: all .2s;
+
+
+//-----------------//
+//--- Container ---//
+//-----------------//
+.bwpg-container {
+  width: 100%;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+//-----------//
+//--- Row ---//
+//-----------//
+.bwpg-row {
+  margin: 0 -1rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+//--------------//
+//--- Column ---//
+//--------------//
+.bwpg-col-md-6,
+.bwpg-col-lg-4,
+.bwpg-col-xl-3 {
+  padding: 1rem;
+}
 
 
 //------------------//
@@ -34,6 +66,13 @@ $font-weight-bold: 700;
 //--------------//
 //--- Titles ---//
 //--------------//
+.bwpg-archive-title {
+  font-size: 2.5rem;
+  font-weight: $font-weight-bold;
+  margin-top: 0;
+  margin-bottom: 3.5rem;
+  padding: 0;
+}
 .bwpg-initial-title {
   font-size: 1.75rem;
   font-weight: $font-weight-bold;
@@ -68,3 +107,87 @@ $font-weight-bold: 700;
     margin-top: 0;
   }
 }
+
+
+//---------------------//
+//--- Glossary Item ---//
+//---------------------//
+.bwpg-glossary-item {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 220px;
+  position: relative;
+  z-index: 0;
+
+  &-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &-title {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: $font-weight-bold;
+    color: $white;
+    z-index: 1;
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    z-index: -1;
+    transition: $transition;
+  }
+
+  &:hover {
+
+    .bwpg-glossary-item-overlay,
+    .bwpg-glossary-item-title {
+      opacity: 0;
+    }
+  }
+}
+
+
+//---------------------//
+//--- Media Queries ---//
+//---------------------//
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1240px;
+
+@media (min-width: $breakpoint-md) {
+
+  .bwpg-col-md-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+
+  .bwpg-col-lg-4 {
+    width: 33%;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+
+  .bwpg-col-xl-3 {
+    width: 25%;
+  }
+}
+
+
+
+

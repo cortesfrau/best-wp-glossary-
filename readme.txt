@@ -5,7 +5,7 @@ Tags: glossary
 Requires at least: 4.7.0
 Tested up to: 5.6
 Requires PHP: 5.4
-Stable tag: 1.0.1
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,7 @@ This plugin allows users to create a glossary page.
 
 == Changelog ==
 1.0.1 Minor style changes.
+1.1.0 Added the option to create multiple glossaries.
 
 == Frequently Asked Questions ==
 

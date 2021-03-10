@@ -45,20 +45,43 @@ function bwpg_settings_page() {
   // Get Settings
   $settings = bwpg_get_settings();
 
+  // Get Glossaries
+  $args = [
+    'post_type' => 'bwpg_glossary',
+    'posts_per_page' => -1
+  ];
+  $glossaries = get_posts($args);
+
+  // Get Glossary Archive URL
+  $glossary_archive_url = get_post_type_archive_link('bwpg_glossary');
+
   ?>
 
   <div class="wrap">
 
     <h1>Better WP Login Page</h1>
 
-    <h2><?php _e('Shortcodes', 'best_wp_glossary'); ?></h2>
-    <p><?php _e('Use these shortcodes to show the glossary content in any page or post.','best_wp_glossary'); ?></p>
+    <h2><?php _e('Glossary archive and glossary singles', 'best_wp_glossary'); ?></h2>
+    <p><?php _e('These are the links to your glossary contents.','best_wp_glossary'); ?></p>
 
     <table class="form-table">
+
       <tr>
-        <th><?php _e('Glossary archive','best_wp_glossary'); ?></th>
-        <td><code>[bwpg_archive]</code></td>
+        <th><?php _e('Glossary archive', 'best_wp_glossary'); ?></th>
+        <td><a target="_blank" href="<?php echo $glossary_archive_url; ?>"><?php echo $glossary_archive_url; ?></a></td>
       </tr>
+
+      <?php foreach ($glossaries as $glossary) {
+        $glossary_url = get_the_permalink($glossary->ID);
+        ?>
+
+        <tr>
+          <th><?php echo $glossary->post_title; ?></th>
+          <td><a target="_blank" href="<?php echo $glossary_url; ?>"><?php echo $glossary_url; ?></a></td>
+        </tr>
+
+      <?php } ?>
+
     </table>
 
     <form method="post" action="options.php">
@@ -66,9 +89,9 @@ function bwpg_settings_page() {
       <?php settings_fields( 'bwpg_settings' ); ?>
       <?php do_settings_sections( 'bwpg_settings_page' ); ?>
 
-      <!-- Colors : START -->
       <h3><?php echo __( 'Colors', 'best_wp_glossary'); ?></h3>
       <p><?php _e('Enter colors in HEX format. Example: #1E90FF', 'best_wp_glossary'); ?></p>
+
       <table class="form-table">
         <tr>
           <th><label for="accent-color"></label><?php echo __( 'Accent color', 'best_wp_glossary' ); ?></th>

@@ -3,9 +3,9 @@
 /**
  * Plugin Name: Best WP Glossary
  * Text Domain: best_wp_glossary
- * Description: This plugin allows users to create a glossary.
+ * Description: This plugin allows users to create several glossaries.
  * Plugin URI: https://github.com/cortesfrau/best-wp-glossary/
- * Version: 1.0.1
+ * Version: 1.1.0
  * Author: Lluís Cortès
  * Author URI: https://lluiscortes.com
  * License: GPLv2 or later
@@ -33,6 +33,5 @@ define('BWPG_BASENAME', plugin_basename( __FILE__));
 require_once BWPG_PATH . '/inc/functions.php';
 require_once BWPG_PATH . '/inc/custom-types.php';
 require_once BWPG_PATH . '/inc/enqueue.php';
-require_once BWPG_PATH . '/inc/shortcodes.php';
 require_once BWPG_PATH . '/inc/core.php';
 require_once BWPG_PATH . '/inc/settings.php';

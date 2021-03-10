@@ -13,19 +13,27 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: inc/custom-types.php:13, inc/custom-types.php:18
-msgid "Glossary Word"
-msgstr ""
-
 #: inc/custom-types.php:14
-msgid "Glossary Words"
+msgid "Glossaries"
 msgstr ""
 
-#: inc/custom-types.php:53, inc/custom-types.php:58
-msgid "Glossary Initials"
+#: inc/custom-types.php:15, inc/custom-types.php:19
+msgid "Glossary"
 msgstr ""
 
 #: inc/custom-types.php:54
+msgid "Words"
+msgstr ""
+
+#: inc/custom-types.php:55, inc/custom-types.php:59
+msgid "Word"
+msgstr ""
+
+#: inc/custom-types.php:95, inc/custom-types.php:100
+msgid "Glossary Initials"
+msgstr ""
+
+#: inc/custom-types.php:96
 msgid "Glossary Initial"
 msgstr ""
 
@@ -37,26 +45,26 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: inc/settings.php:54
-msgid "Shortcodes"
+#: inc/settings.php:64
+msgid "Glossary archive and glossary singles"
 msgstr ""
 
-#: inc/settings.php:55
-msgid "Use these shortcodes to show the glossary content in any page or post."
-msgstr ""
-
-#: inc/settings.php:59
-msgid "Glossary archive"
+#: inc/settings.php:65
+msgid "These are the links to your glossary contents."
 msgstr ""
 
 #: inc/settings.php:70
+msgid "Glossary archive"
+msgstr ""
+
+#: inc/settings.php:92
 msgid "Colors"
 msgstr ""
 
-#: inc/settings.php:71
+#: inc/settings.php:93
 msgid "Enter colors in HEX format. Example: #1E90FF"
 msgstr ""
 
-#: inc/settings.php:74
+#: inc/settings.php:97
 msgid "Accent color"
 msgstr ""
