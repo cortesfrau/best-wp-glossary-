@@ -2,6 +2,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/node,phpstorm
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,phpstorm
 
+### Bundled Files ###
+bundled/
+
 ### Node ###
 # Logs
 logs
