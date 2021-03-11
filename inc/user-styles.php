@@ -20,14 +20,15 @@ $accent_color = $settings['accent_color'];
   /*--- Archive Navigation ---*/
   /*--------------------------*/
   #bwpg-archive-nav a {
-    color: var(--bwpg-accent-color) !important;
+    color: var(--bwpg-white) !important;
     border-color: var(--bwpg-accent-color) !important;
+    background-color: var(--bwpg-accent-color) !important;
   }
   #bwpg-archive-nav a:hover,
   #bwpg-archive-nav a:focus,
   #bwpg-archive-nav a:active {
-    background-color: var(--bwpg-accent-color) !important;
-    color: var(--bwpg-white) !important;
+    background-color: transparent !important;
+    color: var(--bwpg-accent-color) !important;
   }
 
 </style>

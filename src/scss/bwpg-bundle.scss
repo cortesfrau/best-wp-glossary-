@@ -4,6 +4,8 @@
 $accent-color: #1E90FF;
 $white: #fff;
 $font-weight-bold: 700;
+$border-radius: .2rem;
+$transition: all .2s ease-in-out;
 
 
 //------------------//
@@ -24,10 +26,13 @@ $font-weight-bold: 700;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: .5rem 1rem;
+    padding: .75rem 1rem;
     border: 1px solid;
     font-size: 1rem;
     font-weight: $font-weight-bold;
+    line-height: 1;
+    border-radius: $border-radius;
+    transition: $transition;
   }
 }
 
@@ -45,7 +50,7 @@ $font-weight-bold: 700;
 }
 .bwpg-word-title {
   font-weight: $font-weight-bold;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-top: 0;
   margin-bottom: .5rem;
 }

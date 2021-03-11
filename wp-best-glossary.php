@@ -5,7 +5,7 @@
  * Text Domain: best_wp_glossary
  * Description: This plugin allows users to create a glossary.
  * Plugin URI: https://github.com/cortesfrau/best-wp-glossary/
- * Version: 1.0.1
+ * Version: 1.0.4
  * Author: Lluís Cortès
  * Author URI: https://lluiscortes.com
  * License: GPLv2 or later
